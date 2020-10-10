@@ -1,0 +1,281 @@
+.main-container{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+    "projects"
+    "about";
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.projects{
+    grid-area: projects;
+    display: grid;
+   text-align: center;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+  
+   
+}
+.about{
+    grid-area: about;
+    margin-top: 6rem;
+}
+
+/* projects */
+.projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: repeat(5, 1fr);
+    grid-gap:1%;
+}
+.project-1,.project-2,.project-3,.project-4,.project-5{
+    border: 2px solid gold;
+    box-shadow: 5px 5px lightgrey;
+    
+}
+
+.img-1,.img-2, .img-3,.img-4,.img-5{
+    align-self: center;
+    border: 2px solid lightgray;
+    
+    margin: auto;
+    margin-top:10px;
+}
+
+/* .img-one{
+  margin: auto;
+} */
+@media(min-width: 769px){
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 380px);
+    grid-gap:1%;
+    text-align: left;
+   
+
+}
+.img-1,.img-2, .img-3,.img-4,.img-5{
+    align-self: start;
+    border: 2px solid lightgray;
+    margin-top:10px;
+}
+
+    /* card layout */
+
+
+.project-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2%;
+    grid-template-areas:  
+    "image-1 text-1 "
+    "image-1 links-1 "
+    "image-1  extext-1"
+    ;
+    overflow-y: scroll;
+    border: 2px solid gold;
+    padding: 56px;
+    border-radius: 5px;
+   
+    box-shadow: 5px 5px lightgrey;
+    
+}
+.project-1-text{
+    grid-area: text-1;
+    
+    
+}
+.img-1{
+    grid-area: image-1;
+    
+  border: 1px solid lightgrey;
+    border-radius: 3px;
+    background: white;
+}
+.web-links-1{
+    grid-area: links-1;
+    
+}
+.project-1-exText{
+    grid-area: exttext-1;
+    
+}
+
+/* project-2 */
+.project-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2%;
+    grid-template-areas: 
+        "image-2 text-2"
+        "image-2 links-2"
+        "image-2 extext-2";
+        border: 2px solid gold;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 5px 5px lightgrey;
+        overflow-y: scroll;
+        
+}
+.project-2-text{
+    grid-area: text-2;
+}
+.img-2{
+    grid-area: image-2;
+
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    
+    background: white;
+}
+.web-links-2{
+    grid-area: links-2;
+}
+.project-2-exText{
+    grid-area: exttext-2;
+}
+/* project 3 */
+.project-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2%;
+    grid-template-areas: 
+        "image-3 text-3"
+        "image-3 links-3"
+        "image-3 extext-3";
+        border: 2px solid gold;
+        padding: 56px;
+        border-radius: 5px;
+        overflow-y: scroll;
+        box-shadow: 5px 5px lightgrey;
+}
+.project-3-text{
+    grid-area: text-3;
+}
+.img-3{
+    grid-area: image-3;
+    border-radius: 3px;
+    background: white;
+    border: 1px solid lightgrey;
+}
+.web-links-3{
+    grid-area: links-3;
+}
+.project-3-exText{
+    grid-area: exttext-3;
+}
+/* project-4 */
+.project-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5%;
+    grid-template-areas: 
+        "image-4 text-4"
+        "image-4 links-4"
+        "image-4 extext-4";
+        border: 2px solid gold;
+    padding: 56px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    box-shadow: 5px 5px lightgrey;
+}
+.project-4-text{
+    grid-area: text-4;
+    
+}
+.img-4{
+    grid-area: image-4;
+    border: 1px solid lightgrey;
+   
+   
+    background: white;
+}
+.web-links-4{
+    grid-area: links-4;
+}
+.project-4-exText{
+    grid-area: exttext-4;
+}
+
+/* Project 5 */
+.project-5{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:1fr 1fr 3fr;
+    grid-gap: 2%;
+    grid-template-areas: 
+        "image-5 text-5"
+        "image-5 links-5"
+        "image-5 extext-5";
+        border: 2px solid gold;
+        padding: 56px;
+        border-radius: 5px;
+        overflow-y: scroll;
+        box-shadow: 5px 5px lightgrey;
+}
+.project-5-text{
+    grid-area: text-5;
+}
+.img-5{
+    grid-area: image-5;
+   
+   
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background: white;
+}
+.web-links-5{
+    grid-area: links-5;
+}
+.project-5-exText{
+    grid-area: exttext-5;
+    
+}
+
+
+
+}
+
+@media(min-width: 1024px){
+  .main-container{
+      grid-template-rows: 2fr 1fr;
+      padding-left: 15%;
+      padding-right: 15%;
+  }
+  .project-4{
+    padding: 56px;
+  }
+ 
+.about{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    
+    
+   
+    grid-template-areas: 
+    "about-header"
+    "about-text" 
+    "michael"
+    "about-footer";
+
+}
+.about-header{
+    grid-area: about-header;
+}
+.about-text{
+    grid-area: about-text;
+}
+.michael{
+    grid-area: michael;
+}
+.about-footer{
+    grid-area: about-footer;
+}
+}
