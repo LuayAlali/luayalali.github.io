@@ -54,7 +54,7 @@ strong{
 /* Background  */
 body{
 	background-color:white;
-	background-image: url("../images/white-min.jpg");
+	background-image: url("../images/backgrounds/white-min.jpg");
 	background-size: cover;
 	
 	background-attachment: fixed;
@@ -83,10 +83,11 @@ body{
 
 .navbar-dark .navbar-brand{
 	color: transparent;
+	font-family: 'Alef', sans-serif;
 }
 
 .nav-link{
-	font-weight: 200;
+	font-weight: 300;
 	padding: 0;
 }
 .navbar{
@@ -183,6 +184,10 @@ background-color:  #1fabec;
 	
 }
 
+/* about */
+#about{
+	font-family: 'Alef', sans-serif;
+}
 
 /* cards */
 

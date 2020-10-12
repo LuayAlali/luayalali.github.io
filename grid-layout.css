@@ -18,9 +18,33 @@
 }
 .about{
     grid-area: about;
-    margin-top: 6rem;
+    margin-top: 9rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
+    grid-template-areas: 
+    "about-header"
+    "about-text"
+    "michael"
+    "about-footer";
 }
-
+.about-header{
+    grid-area: about-header;
+    justify-self: start;   
+    color: rgba(31, 171, 236, .7);
+    
+}
+.about-text{
+    grid-area: about-text;
+}
+.michael{
+    grid-area: michael;
+}
+.about-footer{
+    grid-area: about-footer;
+    justify-self: end;
+    color: rgba(31, 171, 236, .7);
+}
 /* projects */
 .projects{
     display: grid;
@@ -258,7 +282,7 @@
     grid-template-rows: auto;
     
     
-   
+   grid-gap:0%;
     grid-template-areas: 
     "about-header"
     "about-text" 
