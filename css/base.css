@@ -176,7 +176,17 @@ background-color:  #1fabec;
 }
 
 /* main container */
-
+.projects-header{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #1fabec;
+	font-size: 30px;
+	height: 20px;
+}
+.projects-footer{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #1fabec;
+	font-size: 30px;
+}
 #projects{
 	
 		padding-top: 250px;
@@ -187,8 +197,18 @@ background-color:  #1fabec;
 /* about */
 #about{
 	font-family: 'Alef', sans-serif;
+	padding-top:150px;
 }
-
+.about-header{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #1fabec;
+	font-size: 30px;
+}
+.about-footer{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #1fabec;
+	font-size: 30px;
+}
 /* cards */
 
 /* bottom nav */
