@@ -34,6 +34,11 @@ html {
    }    */
 
 
+/* hide everything  */
+
+#projects, .projects-header,.projects-footer,#about{
+	display: none;
+}
 
 
 /* logo */
@@ -176,19 +181,20 @@ background-color:  #1fabec;
 }
 
 /* main container */
+
 .projects-header{
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Alef', sans-serif;
 	color: #1fabec;
 	font-size: 30px;
 	height: 20px;
 }
 .projects-footer{
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Alef', sans-serif;
 	color: #1fabec;
 	font-size: 30px;
 }
 #projects{
-	
+
 		padding-top: 250px;
 		margin-top: -250px;
 	
@@ -198,14 +204,15 @@ background-color:  #1fabec;
 #about{
 	font-family: 'Alef', sans-serif;
 	padding-top:150px;
+    margin-top: -60px;
 }
 .about-header{
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Alef', sans-serif;
 	color: #1fabec;
 	font-size: 30px;
 }
 .about-footer{
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Alef', sans-serif;
 	color: #1fabec;
 	font-size: 30px;
 }
@@ -227,6 +234,7 @@ background-color:  #1fabec;
 	text-transform: uppercase;
 	font-size: 80px;
 }
+
 
 
 
@@ -252,7 +260,7 @@ background-color:  #1fabec;
 	max-height: 312px;
 	border-radius: 5px;
 	position: relative;
-	transition: .2 ease;
+	transition:  opacity 200ms ease;
 }
 .img-1:hover .img-one,.img-2:hover .img-two,.img-3:hover 
 .img-three,.img-4:hover .img-four,.img-5:hover .img-five{
@@ -271,7 +279,7 @@ cursor: pointer;
 	text-align: center;
 	font-size: 1.3rem;
 	color: black;
-
+	font-family: 'Alef', sans-serif;
 
 }
  .img-1:hover .hover-text, .img-2:hover .hover-text,
@@ -320,7 +328,7 @@ cursor: pointer;
 		display: none;
 	}
 	
-
+}
 @media(min-width: 767px){
 .main-container{
 	margin-bottom: 25px;
@@ -329,7 +337,4 @@ cursor: pointer;
 	font-size: 80px;
 	color:rgba(0, 0, 0, 0.75);
 }
-}
-@media(min-width: 1024px){
-
 }
