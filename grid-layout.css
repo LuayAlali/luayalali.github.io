@@ -14,7 +14,7 @@
     display: grid;
    text-align: center;
    grid-template-columns: 1fr;
-   grid-template-rows: auto;
+   /* grid-template-rows: auto; */
   
    
 }
@@ -52,7 +52,7 @@
 .projects{
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: repeat(5, 1fr);
+    grid-auto-rows: auto;
     grid-gap:1%;
 }
 .project-1,.project-2,.project-3,.project-4,.project-5{
