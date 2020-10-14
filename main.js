@@ -100,43 +100,9 @@ $('.bottom-navbar').on('click',function() {
 
 // Ice Vanilla 
 
-// variables
-const mainBtn = document.querySelector('.project-btn');
-const projects = document.querySelector('#projects');
-const projectsH = document.querySelector('.projects-header');
-const projectsF = document.querySelector('.projects-footer');
-const about = document.querySelector('#about');
 
-const navLinkP = document.querySelector('.projects-links');
-const navLinkA = document.querySelector('.about-links');
+// scroll Reveal
 
-
-
-
-
-// E.Listeners
-
-mainBtn.addEventListener('click', () => {
-
- projects.style.display = 'grid';
- projectsF.style.display = 'flex';
- projectsH.style.display = 'flex';
- about.style.display = 'grid';
-});
-
-// if projects link is clicked
-navLinkA.addEventListener('click', () =>{
-  projects.style.display = 'grid';
- projectsF.style.display = 'flex';
- projectsH.style.display = 'flex';
- about.style.display = 'grid';
-});
-
-
-// if about links is clicked
-navLinkP.addEventListener('click', () =>{
-  projects.style.display = 'grid';
- projectsF.style.display = 'flex';
- projectsH.style.display = 'flex';
- about.style.display = 'grid';
-});
+ScrollReveal().reveal('.always', {delay: 500, easing:'cubic-bezier(.17,.67,.92,.34)'});
+ScrollReveal().reveal('.jumbo-sub-1', {delay: 850,  easing:'cubic-bezier(.17,.67,.92,.34)'});
+ScrollReveal().reveal('.project-btn', {delay: 1350, easing:'cubic-bezier(.17,.67,.92,.34)', scale: 2});

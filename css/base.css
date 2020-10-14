@@ -34,11 +34,9 @@ html {
    }    */
 
 
-/* hide everything  */
 
-#projects, .projects-header,.projects-footer,#about{
-	display: none;
-}
+
+
 
 
 /* logo */
@@ -201,6 +199,10 @@ background-color:  #1fabec;
 }
 
 /* about */
+html.sr .loadhidden{
+	visibility: hidden;
+}
+
 #about{
 	font-family: 'Alef', sans-serif;
 	padding-top:150px;
