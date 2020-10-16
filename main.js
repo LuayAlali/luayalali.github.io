@@ -3,6 +3,8 @@
 
 // navbar
 
+
+// on click event
 $('.nav-link').on('click',function() {
     $('.navbar-collapse').collapse('hide');
   });
@@ -23,7 +25,12 @@ $('.nav-link').on('click',function() {
     $('.navbar-collapse').collapse('hide');
   });
 
+// on scroll event 
 
+// Navbar collapses on window scroll
+$(window).scroll(function() {
+    $('.navbar-collapse').collapse('hide');
+});
 
 
   // cards
