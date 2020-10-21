@@ -27,10 +27,10 @@ $('.nav-link').on('click',function() {
 
 // on scroll event 
 
-// Navbar collapses on window scroll
-$(window).scroll(function() {
-    $('.navbar-collapse').collapse('hide');
-});
+//// Navbar collapses on window scroll
+//$(window).scroll(function() {
+//    $('.navbar-collapse').collapse('hide');
+//});
 
 
   // cards
