@@ -45,7 +45,12 @@ strong{
 .strongGuess{
 	color:rgb(2, 131, 236);
 }
-
+.caption-capture{
+	color: darkgoldenrod;
+}
+.startup{
+	color:rebeccapurple;
+}
 /* Background  */
 body{
 	background-color:white;
