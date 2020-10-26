@@ -239,6 +239,9 @@ html.sr .loadhidden{
 	font-family: 'Quicksand', sans-serif;
 
 }
+.project-3 p{
+	margin-bottom: 0;
+}
 .web-links-1,.web-links-2,.web-links-3,.web-links-4,.web-links-5{
 	padding-left: 5%;
 }
