@@ -1,7 +1,7 @@
 /* Font */
 
 .tweet{
-	font-family: "SF Pro Display","SF Pro Icons", "Helvetica";
+	font-family:"SF Pro Icons", "Helvetica";
 	font-weight: bold;
 }
 *{
@@ -23,7 +23,7 @@
 }
 */
 
-@font-face {
+ 
 /*
   font-family:'SF Pro Display';
   font-style:normal;
@@ -31,7 +31,7 @@
   src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.ttf") format("truetype");
 */
   /* (C) 2015 Apple Inc. All rights reserved.*/
-}
+s
 
 
 .wrapper{
