@@ -4,6 +4,9 @@
 	font-family: "SF Pro Display","SF Pro Icons", "Helvetica";
 	font-weight: bold;
 }
+*{
+	font-family: arial;
+}
 /*
 @font-face {
     font-family:'SF Pro Display';
