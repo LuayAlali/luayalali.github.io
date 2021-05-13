@@ -1,0 +1,303 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	font-family: "SF Pro Display","SF Pro Icons", "Helvetica";
+	font-weight: bold;
+}
+@font-face {
+  font-family:'SF Pro Display';
+  font-style:normal;
+  font-weight:700;
+  src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_bold.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_bold.ttf") format("truetype");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+@font-face {
+  font-family:'SF Pro Display 500';
+	src:url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_medium.eot");}
+*{  
+  background-color: rgb(9, 12, 19);
+}
+
+/* Wrapper Container */
+.wrapper{
+	background-color: #FDFCFC;
+    display: grid;
+    grid-template-columns:repeat(12,1fr);
+    /* grid-template-rows: 100px 700px repeat(46,615px);    */
+    grid-template-rows: 55px 1fr 50px;
+    max-width: 1500px;
+   row-gap: 150px;
+   height: 100vh;
+   background-color: #090C13;
+   /* grid-template-areas: 
+   "navbar"
+   "hero"
+   "footer"; */
+ 
+}
+
+/* Navbar */
+.navbar{
+    grid-column:  1 / span 12 ;
+    /* grid-area: navbar; */
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar-nav{
+  margin-left: auto;
+}
+.navbar-brand, .nav-link, .heroCall{
+ color: #EEECEF;
+	font-family: 'SF Pro Display';
+
+	font-size: 25px;
+ font-weight:500;
+	
+
+}
+.nav-link:hover, .navbar-brand:hover{
+
+color: #CA574B;
+
+}
+.nav-link{
+  margin-left: 20px;
+}
+
+/* Hero Section */
+.hero{
+  
+  /* grid-area: hero; */
+ grid-column: 3/ span 8;
+;
+
+}
+.heroCall{
+  font-size: 50px;
+  color: #EEECEF;
+  font-weight:700;
+}
+.cta{
+  border: 2px solid #CA574B;
+  border-radius: 5px;
+  width: 260px;
+  height: 67px;
+  font-size: 30px;
+line-height: 34px;
+
+color: #EEECEF;
+transition: ease-in 200ms;
+margin-top: 60px;
+}
+.cta:hover{
+  border:none;
+  color:#CA574B;
+}
+
+.footer{
+  /* grid-area: footer; */
+  margin-top: auto;
+  grid-row: 3 ;
+  grid-column: 10/ span 2;
+  color: #EEECEF;
+  margin-bottom: 10px;
+}
+.footerText{
+  font-weight: 200;
+  font-size: 14px;
+  
+}
+
+@media( max-width: 768px){
+  .wrapper{
+    background-color: #FDFCFC;
+      display: grid;
+      grid-template-columns:repeat(8,1fr);
+      /* grid-template-rows: 100px 700px repeat(46,615px);    */
+      grid-template-rows: 60px 1fr 50px;
+      /* max-width: 1500px; */
+     row-gap: 50px;
+     height: 100vh;
+     background-color: #090C13;
+     /* grid-template-areas: 
+     "navbar"
+     "hero"
+     "footer"; */
+   
+  }
+  .navbar{
+    grid-column:  1 / span 8 ;
+    /* grid-area: navbar; */
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  .hero{
+  
+    /* grid-area: hero; */
+   grid-column: 2/ span 7;
+   margin-top: 50px;
+  ;
+  
+  }
+  .heroCall,.cta{
+    /* font-size: 40px; */
+  }
+  .footer{
+    /* grid-area: footer; */
+    margin-top: auto;
+    grid-row: 3 ;
+    grid-column: 6/ span 3;
+    color: #EEECEF;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+    padding-right: 12px;
+  }
+}
+
+@media(max-width: 375px){
+  .wrapper{
+    background-color: #FDFCFC;
+      display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+      /* grid-template-rows: 100px 700px repeat(46,615px);    */
+      grid-template-rows: 60px 1fr 50px;
+      /* max-width: 1500px; */
+     row-gap: 10px;
+     height: 100vh;
+     background-color: #090C13;
+     /* grid-template-areas: 
+     "navbar"
+     "hero"
+     "footer"; */
+   
+  }
+  .navbar{
+    grid-column:  1 / span 4 ;
+    /* grid-area: navbar; */
+    margin-top: 30px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+.navbar-brand{
+  font-size: 16px;
+}
+
+
+.nav-link{
+  display: none;
+}
+.hero{
+  
+  /* grid-area: hero; */
+ grid-column: 1/ span 4;
+ margin-top: 50px;
+justify-items: center;
+;
+
+}
+.heroCall{
+  font-size: 23px;
+ margin-left: 40px;
+ margin-right:40px;
+ width: 240px;
+}
+.cta{
+  width: 240px;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+
+.footer{
+  /* grid-area: footer; */
+  margin-top: auto;
+  grid-row: 3 ;
+  grid-column: 2/ span 3;
+  color: #eeecef;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: 20px;
+  padding-right: 12px;
+}
+}
+
+
+/* overlay */
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(9, 12, 19); /* Black fallback color */
+  background-color: rgba(9,12,19, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #EEECEF;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #CA574B;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media  (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+ 
+
+
+  }
+
+  @media(max-width: 575px){
+ .navbar-nav{
+   display:none;
+ }
+
+  }
+  
+  @media(min-width: 575px){
+    .mobile-nav{
+      display: none;
+    }
+  }
+  /* end of overlay */
