@@ -191,3 +191,8 @@ color: #CA574B;
 	background-color: transparent;
 	
 }
+@media(max-width: 1200px){
+    .wrapper{
+      display:none;
+    }
+  }

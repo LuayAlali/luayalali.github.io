@@ -503,3 +503,9 @@ height: 574px;
 .ui-text{
 	align-self: center;
 }
+
+@media(max-width: 1200px){
+    .wrapper{
+      display:none;
+    }
+  }
