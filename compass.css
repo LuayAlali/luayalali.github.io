@@ -379,6 +379,34 @@ height: 168.75px;
     margin-top: 10px;
 }
 
+
+/* lesson learned */
+
+.lessons-learned{
+	grid-column: 1/ span 5;
+	max-width: 550px;
+	justify-self: end;
+    align-self: center;
+	font-family:'SF Pro Display';
+	font-weight: 700;
+}
+
+
+
+.what-i-learned{
+	text-decoration: none;
+	list-style: none;
+	font-family:'SF Pro Display';
+}
+ h3 .lesson{
+	font-size: 30px;
+	font-family:'SF Pro Display';
+	font-weight: 700;
+}
+.lesson-summ{
+	font-size: 24px;
+	
+}
 /*  Intervention*/
 
 
