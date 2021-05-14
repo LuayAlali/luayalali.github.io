@@ -191,19 +191,23 @@ color: #CA574B;
 	background-color: transparent;
 	
 }
-.notice{
-	color: white;
-	font-size: 45px;
-}
+.notice {
+    color: black;
+    font-size: 45px;
+    grid-column: 1/span 12;
+    margin-left: 130px;
+    margin-right: 130px;
+    align-self: center;
+  }
 
 @media(max-width: 1200px){
-    .wrapper{
+    .card-1{
       display:none;
     }
   }
 
   @media(min-width: 1201px){
-	  .notice{
-		  display: none;
-	  }
+	.notice p{
+        display: none;
+      }
   }

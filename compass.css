@@ -504,8 +504,22 @@ height: 574px;
 	align-self: center;
 }
 
+.notice {
+    color: black;
+    font-size: 45px;
+    grid-column: 1/span 12;
+    margin-left: 130px;
+    margin-right: 130px;
+    align-self: center;
+  }
 @media(max-width: 1200px){
-    .wrapper{
-      display:none;
-    }
+    .project-steps, .containerHor, .containerLeft,.containerRight,.context, .hero, .divider{
+		display: none;
+	}
+  }
+
+  @media(min-width: 1201px){
+	.notice p{
+        display: none;
+      }
   }
