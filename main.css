@@ -14,7 +14,18 @@
 }
 @font-face {
   font-family:'SF Pro Display 500';
-	src:url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_medium.eot");}
+	src:url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_medium.eot");
+}
+  
+  @font-face {
+ 
+
+  font-family:'SF Pro Display';
+  font-style:normal;
+  font-weight:300;
+  src:local('☺︎'), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.woff") format("woff"), url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_light.ttf") format("truetype");
+
+}
 *{  
   background-color: rgb(9, 12, 19);
 }
@@ -107,7 +118,9 @@ margin-top: 60px;
   margin-bottom: 10px;
 }
 .footerText{
-  font-weight: 200;
+  font-family:'SF Pro Display';
+
+  font-weight:500;
   font-size: 14px;
   
 }
