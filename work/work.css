@@ -191,7 +191,10 @@ color: #CA574B;
 	background-color: transparent;
 	
 }
-
+.notice{
+	color: white;
+	font-size: 45px;
+}
 
 @media(max-width: 1200px){
     .wrapper{
