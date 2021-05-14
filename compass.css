@@ -41,7 +41,8 @@
 .tweet{
     font-family:'SF Pro Display';
     font-weight: 700;
-	
+	width:550px;
+	margin-bottom: 20px;
     
 }
 
@@ -72,7 +73,7 @@
 
 }
 .nav-link:hover, .navbar-brand:hover{
-
+	transition: color 200ms ease-in-out;
 color: #CA574B;
 
 }
@@ -199,6 +200,11 @@ height: 168.75px;
     margin-left: 60px;
 	min-width: 350px;
 }
+
+
+
+
+
 /* Horizontal Information */
 .containerHor{
  grid-column: 1/ span 12;
@@ -299,11 +305,21 @@ height: 168.75px;
 
 
 
+/* First Iteration */
+
+.first-iteration{
+	grid-column: 1/ span 5;
+	max-width: 550px;
+	justify-self: end;
+    align-self: center;
+	font-family:'SF Pro Display';
+	font-weight: 700;
+}
 
 /* Amanda's painoints */
 .pain-points{
     max-width:  475px;
-    font-size: 30px;
+    font-size: 20px;
 }
 .point{
     width: 120px;
@@ -504,6 +520,25 @@ height: 574px;
 .ui-text{
 	align-self: center;
 }
+
+/* links */
+.inspiration-link{
+	
+	color:#0F0F0F;
+	font-family: "SF Pro Display";
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 24px;
+	transition: color 200ms ease-in-out;
+}
+.inspiration-link:hover{
+	color: #CA574B;
+}
+a span{
+	text-decoration: none;
+}
+
+/*  */
 
 .notice {
     color: black;
