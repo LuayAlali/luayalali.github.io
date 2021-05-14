@@ -34,6 +34,7 @@
    "navbar"
    "hero"
    "footer"; */
+   margin:auto;
  
 }
 
@@ -301,3 +302,9 @@ justify-items: center;
     }
   }
   /* end of overlay */
+
+  @media(max-width: 1200px){
+    .wrapper{
+      display:none;
+    }
+  }
