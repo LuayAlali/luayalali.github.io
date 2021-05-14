@@ -309,7 +309,7 @@ justify-items: center;
   }
   
   @media(max-width: 1200px){
-      .wrapper{
+      .hero{
         display:none;
       }
     }
