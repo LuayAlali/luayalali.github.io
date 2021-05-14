@@ -303,7 +303,7 @@ justify-items: center;
   }
   /* end of overlay */
 
-  .notice{
+  .notice p{
     color: white;
     font-size: 45px;
   }
@@ -315,7 +315,7 @@ justify-items: center;
     }
   
     @media(min-width: 1201px){
-      .notice{
+      .notice p{
         display: none;
       }
     }
