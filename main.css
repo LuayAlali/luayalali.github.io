@@ -303,7 +303,7 @@ justify-items: center;
   }
   /* end of overlay */
 
-@media(min-width: 1200px){
+@media(min-width: 1201px){
   .fourofour{
     display: none;
   }
