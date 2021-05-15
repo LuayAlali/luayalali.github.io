@@ -92,21 +92,18 @@ color: #CA574B;
 	justify-self: center;
 	box-shadow: 5px 5px 40px 0 rgba(0,0,0,0.15);
 }
-.card-image{
+/* .card-image{
 	grid-row: 1/ span 1;
 	height: 265px;
 	
-}
+} */
 
 .text-box{
 	grid-row: 2 span/ 1;
 	display: grid;
-	    grid-template-rows: 60px 80px 60px 35px;
-	margin-left: 15px;
-	margin-right: 15px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	grid-row-gap: 15px;
+	    grid-template-rows: 60px 60px 60px 35px;
+	margin: 20px;
+	grid-row-gap: 5px;
 	
 }
 
@@ -122,7 +119,7 @@ color: #CA574B;
 	grid-row: 2/ span 1;
 	font-family:'SF Pro Display';
 	font-weight: 400;
-	max-width: 425px;
+	max-width: 350px;
 	
 }
 .timeline-role{
@@ -149,7 +146,8 @@ color: #CA574B;
 	grid-column:  1fr 1fr;
 	justify-content: space-between;
 /*	margin-top: 15px;*/
-	margin-bottom: 15px;
+	/* margin-bottom: 15px; */
+	align-content: end;
 	
 }
 .icons{
@@ -181,7 +179,8 @@ color: #CA574B;
 		
 	font-family:'SF Pro Display';
 	    font-weight: 700;
-    height: 25px;
+    height: 20px;
+	margin-top: 5px;
 }
 .read-more span{
 	align-self: center;
