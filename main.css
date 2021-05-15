@@ -30,6 +30,8 @@
   background-color: rgb(9, 12, 19);
 }
 
+
+
 /* Wrapper Container */
 .wrapper{
 	background-color: #FDFCFC;
@@ -56,6 +58,7 @@
     margin-top: 30px;
     margin-left: 20px;
     margin-right: 20px;
+    
 }
 
 .navbar-nav{
@@ -317,7 +320,7 @@ justify-items: center;
   /* end of overlay */
 
   .notice {
-    color: white;
+    color: #eeecef;
     font-size: 45px;
     grid-column: 1/span 12;
     margin-top: 400px;
