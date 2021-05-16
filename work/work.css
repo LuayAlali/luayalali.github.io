@@ -104,6 +104,7 @@ color: #CA574B;
 	text-align: start;
 	
 	box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.05);
+	transition: box-shadow 300ms ease-in;
 }
 
 .card-1:hover{
@@ -203,28 +204,31 @@ color: #CA574B;
     height: 20px;
 	margin-top: 5px;
 }
-.read-more span{
+
+
+.read-more img{
+	width: 30px;
+	
+}
+ .read-more span{
 	align-self: center;
 	color:#0F0F0F;
-		border: rgba(0,0,0,0.25) 1px solid;
+		/* border: rgba(0,0,0,0.25) 1px solid;
 	padding: 3px;
-	border-radius: 5px;
-	transition: border 300ms ease-in-out;
+	border-radius: 5px; */
+	/* transition: border 300ms ease-in-out; */
 	transition:  color 300ms ease-in-out;
 		
 	font-family:'SF Pro Display';
 	    font-weight: 700;
 }
 .read-more span:hover{
-	border: none;
-	margin-right: 1px;
-	color: #CA574B;
-	/* background-color: transparent; */
-}
-.read-more:hover{
-	
-	
-}
+	/* border: none;
+	margin-right: 1px; */
+	color: #CA574B;}
+	/* background-color: transparent; } */
+ 
+
 .notice {
     color: black;
     font-size: 45px;

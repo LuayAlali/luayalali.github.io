@@ -56,8 +56,7 @@
     grid-column:  1 / span 12 ;
     /* grid-area: navbar; */
     margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 0 40px 0 40px;
     
 }
 
