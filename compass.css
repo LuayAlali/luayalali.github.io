@@ -412,6 +412,17 @@ height: 168.75px;
 	font-size: 22px;
 	
 }
+/* pangram  */
+.pangram{
+	grid-column: 1/ span 5;
+	grid-row: 1/ span 1;
+	margin-right: 60px;
+	justify-self: end;
+	align-self: center;
+	font-size: 30px;
+	font-family: 'SF Pro Display';
+	font-weight: 700;
+}
 /*  Intervention*/
 
 
