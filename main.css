@@ -336,13 +336,13 @@ justify-items: center;
     }
   }
   
-  @media(max-width: 1200px){
+  @media(max-width: 767px){
       .hero,.navbar{
         display:none;
       }
     }
   
-    @media(min-width: 1201px){
+    @media(min-width: 768px){
       .notice p{
         display: none;
         
