@@ -227,9 +227,9 @@ margin-right: 130px;
 
 
 
-.extendedH{
+/* .extendedH{
     margin-bottom: 250px;
-}
+} */
 
 .hmw{
     /* min-width: 800px; */
@@ -456,8 +456,8 @@ margin-top: 400px;
     justify-self: end;
 }
 .differentBehaviours{
-   min-width: 568px;
-   min-height: 232.79px;
+   width: 568px;
+   height: 232.79px;
    grid-column: 6/ span 6;
    /* margin-left: 30px; */
 }
@@ -759,8 +759,9 @@ a span{
 
 		/* Different Behavuoyrs  */
 		.differentBehaviours{
-			width: 200px;
-			
+			width: 359.98px;
+height: 147.53px;
+			grid-column: 5/ span 4;
 		}
 		/*  */
 
