@@ -193,6 +193,13 @@ color: #CA574B;
 	grid-row: 1fr 1fr;
 	font-family:'SF Pro Display';
 	font-weight: 300;
+	text-decoration: none;
+	color:#0F0F0F;
+	transition:  color 300ms ease-in-out;
+}
+.timeline-role:hover{
+	color:#CA574B;
+	text-decoration: none;
 }
 
 .role{
@@ -213,6 +220,7 @@ color: #CA574B;
 /*	margin-top: 15px;*/
 	/* margin-bottom: 15px; */
 	align-content: end;
+	text-decoration: none;
 	
 }
 .icons{
