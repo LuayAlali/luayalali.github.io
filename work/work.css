@@ -287,6 +287,10 @@ color: #CA574B;
     .cards, .card-1, .card-2{
       display:none;
     }
+	.notice{
+		display : block;
+		font-size: 25px;
+	}
 }
 
   @media(min-width: 768px){
@@ -302,11 +306,16 @@ color: #CA574B;
 	}
 		.card-1{
 			grid-column: 1/span 4;
-			width: 400px;}
+			width: 350px;
+			margin-right: 5%;
+			justify-self: end;
+		}
 
 		.card-2{
 			grid-column: 5/ span 4;
-			width: 400px;
+			width: 350px;
+			justify-self: start;
+				margin-left: 5%;
 		}
 		.summary-text{
 			grid-column: 1/ span 8;
@@ -390,8 +399,9 @@ color: #CA574B;
 			filter: drop-shadow(0px 37.8392px 100.905px rgba(0, 0, 0, 0.06));
 			grid-column: 1/ span 6;
 			
-			justify-self: start;
+			justify-self: end;
 			grid-row: 2/ span 1;
+			margin-right: 5%;
 			text-align: start;
 			
 			box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.05);
@@ -410,7 +420,8 @@ color: #CA574B;
 				filter: drop-shadow(0px 37.8392px 100.905px rgba(0, 0, 0, 0.06));
 				grid-column: 1/ span 12;
 				grid-column: 7/ span 6;
-				justify-self: end;
+				justify-self: start;
+				margin-left: 5%;
 				grid-row: 2/ span 1;
 				text-align: start;
 				
