@@ -198,7 +198,7 @@ height: 168.75px;
 	font-weight: 700;
 	justify-self: end;
 	align-self: center;
-    margin-left: 60px;
+    margin-left: 30px;
 	min-width: 350px;
 }
 
@@ -209,7 +209,8 @@ height: 168.75px;
 /* Horizontal Information */
 .containerHor{
  grid-column: 1/ span 12;
- margin: auto;
+margin-left: 130px;
+margin-right: 130px;
  display: grid;
  
  /* grid-template-columns: repeat(12, 1fr); */
@@ -247,7 +248,10 @@ height: 168.75px;
     grid-row: 1/ span 1;
     font-family:'SF Pro Display';
     font-weight: 700;
-    border-bottom: 2px solid ;
+}
+.hmw-q span{
+  border-bottom: 2px solid ;
+
 }
 .hmw{
     grid-column: 3/ span 7;
@@ -279,13 +283,13 @@ height: 168.75px;
 	grid-column: 1/ span 5 ;
 	align-self: center;
 	justify-self: end;
-	margin-right: 60px;
+	margin-right: 30px;
 	
 }
 .section-header{
 	grid-column: 6/ span 6;
 	align-self: center;
-	margin-left: 60px;
+	margin-left: 30px;
 	font-size: 60px;
 	font-family:'SF Pro Display';
 	font-weight: 700;
@@ -330,7 +334,7 @@ height: 168.75px;
 
 .hypothesis{
     grid-column: 6/ span 7;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 .hyp-text{
     min-width: 523px;
@@ -358,7 +362,7 @@ height: 168.75px;
     
     max-width: 500px;
     justify-self: start;
-    margin-left: 60px;
+    margin-left: 30px;
 	align-self: center;
 }
 .tweetR .tweetText{
@@ -416,7 +420,7 @@ height: 168.75px;
 .pangram{
 	grid-column: 1/ span 5;
 	grid-row: 1/ span 1;
-	margin-right: 60px;
+	margin-right: 30px;
 	justify-self: end;
 	align-self: center;
 	font-size: 30px;
@@ -455,7 +459,7 @@ margin-top: 400px;
    min-width: 568px;
    min-height: 232.79px;
    grid-column: 6/ span 6;
-   /* margin-left: 60px; */
+   /* margin-left: 30px; */
 }
 .Amanda{
     /* height: 422px;
@@ -464,19 +468,20 @@ margin-top: 400px;
 height: 483.4px;
      grid-column: 6 /span 6;
     align-self: center;
-    margin-left: 60px;
+    margin-left: 30px;
    
 }
 .experience-map{
 	grid-column: 1/span 5;
 	justify-self: end;
+
 }
 .sketches{
     width: 596.13px;
 height: 371.83px;
     grid-column: 6 / span 6;
     justify-self: start;
-		margin-left: 60px;
+		margin-left: 30px;
 }
 .adjectives{
 	width: 587px;
@@ -490,12 +495,12 @@ height: 371.83px;
 	width: 500px;
 	height: 500px;
 	justify-self: end;
-    margin-right: 60px;
+    margin-right: 30px;
 }
 
 .mid-fidelity{
 	grid-column: 6 /span 6;
-	margin-left: 60px;
+	margin-left: 30px;
 	align-self: center;
 }
 
@@ -508,7 +513,7 @@ height: 574px;
 	grid-column: 6 / span 6;
 	width: 456.53px;
 	height: 409.52px;
-	margin-left: 60px;
+	margin-left: 30px;
 		
 }
 
@@ -516,7 +521,7 @@ height: 574px;
 	grid-column: 1 / span 5;
 	width: 376px;
 	height: 326.96px;
-	margin-right: 60px;
+	margin-right: 30px;
 	justify-self: end;
 }
 
@@ -524,7 +529,7 @@ height: 574px;
 	grid-column: 6 / span 6;
 	width: 578.15px;
 	height: 156.48px;
-	margin-left: 60px;
+	margin-left: 30px;
 	align-self: center;
 }
 
@@ -533,16 +538,16 @@ height: 574px;
 	width: 276.46px;
 	height: 599px;
 	justify-self: end;
-	margin-right: 60px;
+	margin-right: 30px;
 }
 .hf-maps{
 	grid-column: 6 / span 6;
-	margin-left: 60px;
+	margin-left: 30px;
 	align-self: center;
 	
 }
 .diagram-text{
-	margin-right: 60px;
+	margin-right: 30px;
 }
 .diagram{
 	width: 256.28px;
@@ -561,7 +566,7 @@ height: 574px;
 	width: 269.1px;
 	height: 578px;
 	grid-column: 1 / span 5;
-	margin-right: 60px;
+	margin-right: 30px;
 	align-self: center;
 		justify-self: end;
 }
@@ -626,13 +631,993 @@ a span{
     margin-right: 130px;
     align-self: center;
   }
-@media(max-width: 1200px){
+/* @media(max-width: 1200px){
     .project-steps, .containerHor, .containerLeft,.containerRight,.context, .hero, .divider{
 		display: none;
 	}
-  }
+  } */
 
-  @media(min-width: 1201px){
+
+  @media(min-width: 768px){
+	  .wrapper{
+		  grid-template-columns: repeat(8, 1fr);
+		  
+	  }
+
+	  /* hero section */
+	  .hero{
+		  grid-column: 1/ span 8;
+		  grid-template-columns: repeat(8,1fr);
+		  margin-right: 30px;
+		  margin-left: 30px;
+		  grid-template-rows: 100px 200px 30px;
+	  }
+	  .hero-text{
+		  grid-column: 1/span 5;
+		  font-size: 35px;
+	  }
+	  .mockups{
+		  grid-column: 5/ span 4;
+	  }
+	  .mockup-1, .mockup-2{
+		width:108.14px;
+		height:228.45px
+	  }
+	  .details{
+		  grid-column:1/ span 5;
+	  }
+	  .details span{
+		  padding-left: 5px;
+		  padding-right:5px;
+	  }
+/*  */
+
+	  /* Context Section */
+	 .context{
+	  grid-column: 1/ span 8;
+	  margin-right: 30px;
+	  margin-left: 30px;
+	 }
+
+	 .context-text{
+		 grid-column: 1/span 4;
+		 
+	 }
+	 .context-desc{
+		 font-size: 16px;
+	 }
+	 /*  */
+
+
+	 	/* Project Steps */
+	 .project-steps{
+		 grid-column: 1/ span 8;
+		 margin-right: 30px;
+		 margin-right: 30px;
+		 grid-template-columns: repeat(8, 1fr);
+	 }
+	 .steps{
+		 grid-column: 1/ span 4;
+		 width: 299px;
+		 height: 74.31px;
+	 }
+
+	 .step-text{
+		 grid-column: 5/ span 4;
+		 min-width: 100px;
+		 font-size: 25px;
+	 }
+	 
+	/* Divider */
+	.divider{
+		grid-column: 1/ span 8;
+		margin-right: 30px;
+		margin-left: 30px;
+		border-bottom-width: 3px;
+		border-top-width: 3px;
+	}
+	.discover{
+		grid-column: 1/ span 4;
+		margin-right: 30px;
+	}
+	.section-header{
+		grid-column: 5/ span 4;
+		font-size: 35px;
+		margin-left: 30px;
+	}
+
+
+	/* Left Aligned Information */
+	.containerLeft{
+		grid-column: 1/span 8;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+	.tweet-l{
+		grid-column: 1/ span 4;
+
+	}
+	.pain-points{
+		font-size: 16px;
+	}
+
+	/* Assumptions */
+
+	.assumptions{
+		grid-column: 5/span 4;
+		width: 317.54px;
+		height: 172.07px;
+	}
+
+
+		/* Interviews */
+
+		.interviews{
+			width: 264.19px;
+			height: 263.9px;
+		}
+
+		/* Different Behavuoyrs  */
+		.differentBehaviours{
+			width: 200px;
+			
+		}
+		/*  */
+
+
+		/* Container Right */
+		.containerRight{
+			grid-column: 1/span 8;
+			margin-right: 30px;
+			margin-left: 30px;
+		}
+
+		/* Experience Map */
+		
+		
+		.experience-map{
+			grid-column: 1/ span 4;
+			width: 419.86px;
+			height: 202.56px;
+		}
+		.tweetR{
+			grid-column: 5/span 4;
+		}
+		.containerHor{
+			grid-column: 1/ span 8;
+			margin-left: 60px;
+			margin-right: 60px;
+		}
+		.hmw-q{
+			grid-column: 1/ span 4;
+		}
+		.hmw{
+			font-size: 25px;
+		}
+		
+
+		/* Amanda */
+		.Amanda{
+			width: 311px;
+			height: 303.1px;
+			grid-column: 5/ span 4;
+			margin-left: 0;
+		}
+		/*  */
+
+
+		/* Hypotheis */
+	.hypothesis{
+	grid-column: 5/span 4;
+	}
+		.hyp-text, .hyp-points{
+			font-size: 16px;
+			min-width: 100px;
+		}
+	 .tweet{
+		  width: auto;
+		  font-size: 25px;
+	  }
+
+	  /*  */
+
+	  /* Constraints */
+
+	  .constraint-image{
+		  grid-column: 1/ span 4;
+		  width: 202.47px;
+		  height: 202.47px;
+	  }
+	  
+	  /*  */
+
+
+	  /* Sketches */
+	  .sketches{
+		width: 302.87px;
+		height: 188.91px;
+	  }
+ 
+/*  */
+
+/* Usabiility Testing */
+
+.usability-testing{
+	grid-column: 1/ span 8;
+	justify-self: center;
+	display: grid;
+	
+}
+.usability-header{
+	max-width: 550px;
+}
+
+/*  */
+
+/* First Iteration */
+
+.first-iteration{
+	grid-column: 1/ span 4;
+}
+/*  */
+
+
+/* Mid-fidelity */
+
+.mid-fidelity{
+	grid-column: 5/ span 4;
+	margin-left: 30px;
+}
+
+.mid-fid-1, .mid-fid-2{
+	width: 119.4px;
+	height: 258.69px;
+}
+/*  */
+
+	/* Compass */
+
+	.compass{
+		width: 311px;
+		height: 303.1px;
+		grid-column: 1/ span 4;
+	}
+
+	.compass-text{
+		margin-left: 0;
+	}
+	/*  */
+
+	/* Moadboard */
+
+.moodboard{
+	grid-column: 5/span 4;
+	width: 350px;
+	height: 350px;
+}
+/*  */
+
+	/* Moodboard Extraction */
+
+	.moodboard-extraction{
+		grid-column: 1/ span 4;
+		width: 191.03px;
+		height: 166.12px;
+	}
+/*  */
+
+/* Wordmark */
+
+.wordmark{
+	grid-column: 5/ span 4;
+	width: 359px;
+height: 97.16px;
+
+}
+
+/*  Roboto /  Pangram */
+
+.pangram{
+	grid-column: 1/ span 4;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+/*  */
+
+	/* Google UI */
+	.google-ui{
+		grid-column: 1/ span 4;
+		width: 136.94px;
+		height: 296.69px;
+	}
+
+/*  */
+
+	/*  High-Fidelity Maps*/
+
+	.hf-maps{
+		grid-column: 5/ span 4;
+		
+	}
+	.diagram-text{
+		margin-right: 30px;
+		grid-column: 1/ span 4;
+		/* width: 375px; */
+	}
+	.diagram{
+		width: 150.58px;
+		height: 150.58px;
+	}
+	
+	/*  */
+
+	/* Gif */
+	.gif{
+		width: 136.72px;
+height: 293.66px;
+	}
+/*  */
+
+	/* In Application map */
+
+.hf-map{
+	grid-column: 1/ span 4;
+	width: 136.72px;
+height: 293.66px;
+}
+/*  */
+/* Dissect Image */
+.dissect-image{
+	width: 362px;
+height: 134.36px;
+}
+/*  */
+	/* Lessons learned */
+	.lessons-learned{
+		grid-column: 1/ span 4;
+	}
+
+}
+
+
+
+@media(min-width:1200px){
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: auto;
+    row-gap:  150px;
+    max-width: 1500px;
+	background: #FDFCFC;
+	grid-template-rows: 55px 1fr;
+}
+.tweet{
+    font-family:'SF Pro Display';
+    font-weight: 700;
+	width:550px;
+	margin-bottom: 20px;
+    
+}
+
+/*navigation*/
+
+.navbar{
+    grid-column:  1 / span 12 ;
+    /* grid-area: navbar; */
+/*
+    padding-top: 30px;
+    padding-right: 20px;
+*/
+	padding: 40px;
+	margin-top: 30px;
+
+}
+
+.navbar-nav{
+  margin-left: auto;
+	
+}
+.navbar-brand, .nav-link, .heroCall{
+	font-family:'SF Pro Display';
+    font-style:normal;
+    font-weight:700;
+	font-size: 25px;
+	color:#0F0F0F;
+
+}
+.nav-link:hover, .navbar-brand:hover{
+	transition: color 200ms ease-in-out;
+color: #CA574B;
+
+}
+.nav-link{
+  margin-left: 20px;
+}
+
+
+
+/*Hero Section*/
+.hero{
+	grid-column:  1/ span 12;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	margin-left: 130px;
+	margin-right: 130px;
+	grid-template-rows: 150px 300px 30px;
+	
+}
+.compass-wordmark{
+	grid-row: 1 / span 2;
+	grid-column: 1/ span 3;
+	font-family: 'SF Pro Display';
+	font-size: 45px;
+	font-weight: 700;
+	opacity: 80%;
+	margin-top: 80px;
+	
+}
+.hero-text{
+	font-family: 'SF Pro Display';
+	font-size: 55px;
+	font-weight: 700;
+	grid-row: 2/ span 1;
+	
+	/* line-height: 430px; */
+	grid-column: 1/ span 6;
+	align-self: center;
+	
+}
+.mockups{
+	grid-column: 7 / span 6;
+	grid-row: 1/ span 3;
+	justify-self: end;
+	align-self: end;
+}
+.mockup-1, .mockup-2{
+	width: 200.68px;
+	height: 423.92px;
+	
+}
+
+.details{
+	grid-column: 1/ span 7;
+	grid-row: 3/ span 1;
+	justify-self: start;
+	margin-top: auto;
+	
+}
+.details span{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'SF Pro Display';
+	font-weight:300;
+	
+}
+.details span:first-of-type{
+	padding-left: 0;
+	
+}
+.logo{
+	width: 27.06px;
+	height: 27.06px;
+}
+
+
+/*Context*/
+
+.context{
+	grid-column: 1/ span 12;
+	margin-left: 130px;
+	margin-right: 130px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	
+}
+.context-text{
+ 	grid-column: 1/ span 4;
+	justify-self: end;
+	font-family: 'SF Pro Display';
+	font-size: 30px;
+	font-weight: 700;
+	align-self: center;
+}
+.context-desc{
+	grid-column: 6/ span 6;
+	justify-self: start;
+	font-size: 20px;
+   
+
+}
+
+/*project steps*/
+
+.project-steps{
+	grid-column: 1/ span 12;
+	margin-left: 130px;
+	margin-right: 130px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+.steps{
+	grid-column: 1 / span 7;
+	width: 679px;
+height: 168.75px;
+}
+
+.step-text{
+	grid-column: 8 / span 4;
+		font-family: 'SF Pro Display';
+	font-size: 30px;
+	font-weight: 700;
+	justify-self: end;
+	align-self: center;
+    margin-left: 30px;
+	min-width: 350px;
+}
+
+
+
+
+
+/* Horizontal Information */
+.containerHor{
+ grid-column: 1/ span 12;
+margin-left: 130px;
+margin-right: 130px;
+ display: grid;
+ 
+ /* grid-template-columns: repeat(12, 1fr); */
+
+}
+
+.tweetH{
+    min-height: 100px;
+    max-width: 700px;
+  
+
+}
+
+
+
+
+.extendedH{
+    margin-bottom: 250px;
+}
+
+.hmw{
+    /* min-width: 800px; */
+    font-size: 30px;
+    margin-top: 20px;
+    justify-self: start;
+    font-family:'SF Pro Display';
+    font-weight: 400;
+   
+}
+
+/* HMW */
+.hmw-q{
+    grid-column: 2/ span 3;
+    justify-self: center;
+    grid-row: 1/ span 1;
+    font-family:'SF Pro Display';
+    font-weight: 700;
+  
+}
+.hmw-q span{
+	border-bottom: 2px solid ;
+}
+.hmw{
+    grid-column: 3/ span 7;
+    justify-self: center;
+    grid-row: 2/ span 1;
+    max-width: 700px;
+
+}
+.hypothesis{
+    max-width: 400px;
+}
+
+/*Page Divider*/
+
+.divider{
+	grid-column: 1/ span 12;
+ 	
+ 	display: grid;
+	width: auto;
+	margin-left:130px;
+	margin-right: 130px;
+	
+	border-top:  5px  solid rgba(61, 46, 43, .5);
+	border-bottom: 5px  solid rgba(61, 46, 43, .5);
+	height: 370px;
+}
+
+.discover{
+	grid-column: 1/ span 5 ;
+	align-self: center;
+	justify-self: end;
+	margin-right: 30px;
+	
+}
+
+.section-header{
+	grid-column: 6/ span 6;
+	align-self: center;
+	margin-left: 30px;
+	font-size: 60px;
+	font-family:'SF Pro Display';
+	font-weight: 700;
+}
+
+/* Left aligned Information */
+
+.containerLeft{
+    grid-column: 1/span 12;
+    display: grid;
+}
+.tweet-l{
+    grid-column: 1 /span 5;
+    max-width: 550px;
+    justify-self: end;
+    align-self: center;
+}
+
+/*  */
+
+/* Constraints */
+
+.constraint-image{
+	width: 496px;
+    height: 483.4px;
+}
+
+/*  */
+
+/* Experience map */
+
+.experience-map{
+	width: 600px;
+	height: 259.61px;
+}
+/* First Iteration */
+
+.first-iteration{
+	grid-column: 1/ span 5;
+	max-width: 550px;
+	justify-self: end;
+    align-self: center;
+	font-family:'SF Pro Display';
+	font-weight: 700;
+}
+
+/* Amanda's painoints */
+.pain-points{
+    max-width:  475px;
+    font-size: 20px;
+}
+.point{
+    width: 120px;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 10px;
+}
+
+.hypothesis{
+    grid-column: 6/ span 7;
+    margin-left: 30px;
+}
+.hyp-text{
+    min-width: 523px;
+    font-size: 20px;
+}
+.hyp-points{
+    min-width: 520px;
+	padding-left: 0;
+}
+.hyp-points  li:first-of-type{
+    margin-top: 20px;
+}
+.hyp-points li{
+    margin-left: 35px;
+}
+
+/* Right aligned Information */
+.containerRight{
+    grid-column: 1/span 12;
+    display: grid;
+    
+}
+.tweetR{
+    grid-column: 6/ span 6;
+    
+    max-width: 500px;
+    justify-self: start;
+    margin-left: 30px;
+	align-self: center;
+}
+.tweetR .tweetText{
+    width: 531px;
+}
+
+.tweetText{
+    font-size: 25px;
+    
+}
+.tweetText li {
+    margin-bottom: 10px;
+}
+.tweetText li:first-of-type{
+    margin-top: 10px;
+}
+
+.tweetText ul{
+    margin-top: 10px;
+}
+
+
+/* lesson learned */
+.learnings{
+	margin-left: 180px;
+}
+
+
+.lessons-learned{
+	grid-column: 1/ span 5;
+	max-width: 550px;
+	justify-self: end;
+    align-self: center;
+	font-family:'SF Pro Display';
+	font-weight: 700;
+}
+
+
+
+.what-i-learned{
+	text-decoration: none;
+	list-style: none;
+	font-family:'SF Pro Display';
+}
+ h3 .lesson{
+	font-size: 30px;
+	font-family:'SF Pro Display';
+	font-weight: 700;
+}
+.lesson-summ{
+	font-size: 22px;
+	
+}
+/* pangram  */
+.pangram{
+	grid-column: 1/ span 5;
+	grid-row: 1/ span 1;
+	margin-right: 30px;
+	justify-self: end;
+	align-self: center;
+	font-size: 30px;
+	font-family: 'SF Pro Display';
+	font-weight: 700;
+}
+/*  Intervention*/
+
+
+/* Images */
+.problemSpace{
+    width: 872px;
+height: 304.66px;
+/* grid-column: 1 / span 12; 
+justify-self: center;  */
+/* grid-row: 2 / span 1;
+
+grid-area: problem-space; */
+margin-top: 400px;
+}
+.assumptions{
+    grid-column: 6/ span 7;
+    width: 625px;
+    height: 338px;
+    margin: auto;
+    margin-left: 50px;
+    
+}
+.interviews{
+    width: 560px;
+    height: 559.39px;
+   
+    justify-self: end;
+}
+.differentBehaviours{
+   min-width: 568px;
+   min-height: 232.79px;
+   grid-column: 6/ span 6;
+   /* margin-left: 30px; */
+}
+.Amanda{
+    /* height: 422px;
+    width: 422px; */
+    width: 496px;
+height: 483.4px;
+     grid-column: 6 /span 6;
+    align-self: center;
+    margin-left: 30px;
+   
+}
+.experience-map{
+	grid-column: 1/span 5;
+	justify-self: end;
+}
+.sketches{
+    width: 596.13px;
+height: 371.83px;
+    grid-column: 6 / span 6;
+    justify-self: start;
+		margin-left: 30px;
+}
+.adjectives{
+	width: 587px;
+    height: 123px;
+	grid-column: 1 / span 6;
+	
+	
+}
+.compass{
+	grid-column: 1 / span 5;
+	width: 500px;
+	height: 500px;
+	justify-self: end;
+    margin-right: 30px;
+}
+
+.mid-fidelity{
+	grid-column: 6 /span 6;
+	margin-left: 30px;
+	align-self: center;
+}
+
+.mid-fid-1, .mid-fid-2{
+	width: 289.32px;
+height: 574px;
+}
+
+.moodboard{
+	grid-column: 6 / span 6;
+	width: 456.53px;
+	height: 409.52px;
+	margin-left: 30px;
+		
+}
+
+.moodboard-extraction{
+	grid-column: 1 / span 5;
+	width: 376px;
+	height: 326.96px;
+	margin-right: 30px;
+	justify-self: end;
+}
+
+.wordmark{
+	grid-column: 6 / span 6;
+	width: 578.15px;
+	height: 156.48px;
+	margin-left: 30px;
+	align-self: center;
+}
+
+.google-ui{
+	grid-column: 1 / span 5;
+	width: 276.46px;
+	height: 599px;
+	justify-self: end;
+	margin-right: 30px;
+}
+.hf-maps{
+	grid-column: 6 / span 6;
+	margin-left: 30px;
+	align-self: center;
+	
+}
+.diagram-text{
+	margin-right: 30px;
+}
+.diagram{
+	width: 256.28px;
+	height: 256.28px;
+	margin-left: -60px;
+}
+
+.gif{
+	width: 269.1px;
+	height: 578px;
+	grid-column: 6 / span 6;
+	margin-left:60px;
+}
+
+.hf-map{
+	width: 269.1px;
+	height: 578px;
+	grid-column: 1 / span 5;
+	margin-right: 30px;
+	align-self: center;
+		justify-self: end;
+}
+.ui-text{
+	align-self: center;
+}
+
+/* links */
+.inspiration-link{
+		
+	font-family: "SF Pro Display";
+	font-weight: 700;
+	
+	font-size: 24px;
+
+	
+	border: rgba(0,0,0,0.5) 2px solid;
+	padding: 5px;
+	
+	text-decoration: none;
+	border-radius: 5px;
+	transition: border 100ms ease-in-out;
+
+}
+.inspiration-link:hover{
+	margin-left:2px;
+	border: none;
+	padding: 0;
+	margin-left: 7px;
+}
+.inspiration{
+	transition: color 300ms ease-in-out;
+	color:#0F0F0F;
+	
+}
+
+.inspiration:hover{
+	color: #CA574B;
+}
+
+/* a .inspiration-link{
+	border: rgba(0,0,0,0.5) 2px solid;
+	padding: 5px;
+	border-radius: 5px;
+	transition: border 300ms ease-in-out;
+}
+a .inspiration-link:hover{
+	border: none;
+
+} */
+a span{
+	text-decoration: none;
+}
+
+/*  */
+
+.notice {
+    color: black;
+    font-size: 45px;
+    grid-column: 1/span 12;
+    margin-left: 130px;
+    margin-right: 130px;
+    align-self: center;
+  }
+/* @media(max-width: 1200px){
+    .project-steps, .containerHor, .containerLeft,.containerRight,.context, .hero, .divider{
+		display: none;
+	}
+  } */
+
+}
+
+@media(max-width:767px){
+	.notice{
+		display : block;
+		font-size: 25px;
+	}
+	.project-steps, .containerHor, .containerLeft,.containerRight,.context, .hero, .divider{
+		display: none;
+}
+}
+  @media(min-width: 768px){
 	.notice p{
         display: none;
       }
