@@ -38,7 +38,7 @@
     display: grid;
     grid-template-columns:repeat(12,1fr);
     /* grid-template-rows: 100px 700px repeat(46,615px);    */
-    grid-template-rows: 55px 1fr 0p;
+    grid-template-rows: 55px 1fr 30px;
     max-width: 1500px;
    row-gap: 150px;
    height: 100vh;
@@ -113,7 +113,7 @@ margin-top: 60px;
 .footer{
   /* grid-area: footer; */
   margin-top: auto;
-  grid-row: 3 ;
+  grid-row: 3/ span 1;
   grid-column: 10/ span 2;
   color: #EEECEF;
   margin-bottom: 10px;

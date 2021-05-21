@@ -36,7 +36,8 @@
 .wrapper{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin: auto;
+    grid-template-rows: 55px 1fr 60px;
+	margin: auto;
     row-gap:  150px;
     max-width: 1500px;
 	background: #FDFCFC;
@@ -79,6 +80,18 @@ color: #CA574B;
 .nav-link{
   margin-left: 20px;
 }
+
+/*  */
+	/* Footer */
+
+  .footerText{
+	font-family:'SF Pro Display';
+  
+	font-weight:500;
+	font-size: 14px;
+	
+  }
+  /*  */
 .cards{
 	text-decoration: none;
 	color: #0F0F0F;
@@ -299,6 +312,9 @@ color: #CA574B;
 		display : block;
 		font-size: 25px;
 	}
+	.footer{
+		display: none;
+	}
 }
 
   @media(min-width: 768px){
@@ -328,6 +344,10 @@ color: #CA574B;
 		.summary-text{
 			grid-column: 1/ span 8;
 		}
+		.footer{
+			grid-column: 6/ span 2;
+			grid-row: 3/ span 1;
+		}
 	  }
   
 
@@ -339,7 +359,7 @@ color: #CA574B;
 			row-gap:  150px;
 			max-width: 1500px;
 			background: #FDFCFC;
-			grid-template-rows: 55px 1fr;
+			grid-template-rows: 55px 1fr 50px;
 			color: #0F0F0F;
 		}
 		
@@ -378,6 +398,22 @@ color: #CA574B;
 		.nav-link{
 		  margin-left: 20px;
 		}
+
+		/* footer */
+
+		.footer{
+			/* grid-area: footer; */
+			/* margin-top: auto; */
+			grid-row: 3/ span 1; 
+		grid-column: 10/ span 2;	
+			color: #0F0F0F;
+			
+			/* margin-bottom: 10px; */
+		  
+		  }
+		  /*  */
+		  	
+		  /* Cards */
 		.cards{
 			text-decoration: none;
 			color: #0F0F0F;
