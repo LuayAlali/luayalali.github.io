@@ -795,6 +795,13 @@ height: 147.53px;
 		.hmw{
 			font-size: 25px;
 		}
+
+		/* thank you */
+		.thank-you{
+			grid-column: 1/ span 8;
+			justify-self: center;
+			font-weight: 700;
+		}
 		
 
 		/* Amanda */
@@ -1614,7 +1621,7 @@ a span{
 		display : block;
 		font-size: 25px;
 	}
-	.project-steps, .containerHor, .containerLeft,.containerRight,.context, .hero, .divider{
+	.project-steps, .containerHor, .containerLeft,.containerRight,.context, .hero, .divider, .thank-you{
 		display: none;
 }
 }
