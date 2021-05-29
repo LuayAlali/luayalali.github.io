@@ -36,7 +36,7 @@
 .wrapper{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 55px 1fr 60px;
+    grid-template-rows: 55px 1fr 1fr 60px;
 	margin: auto;
     row-gap:  150px;
     max-width: 1500px;
@@ -130,7 +130,7 @@ color: #CA574B;
 	margin-left:10%;
 }
 .card-2{
-	/*	height: 630px;*/
+		/* height: 630px; */
 		width: 502px;
 		background-color: #ffffff;
 		border-radius: 25px;
@@ -149,6 +149,28 @@ color: #CA574B;
 		transition: box-shadow 300ms ease-in;
 		margin-right:10%;
 	}
+
+	.card-3{
+		/*	height: 630px;*/
+			width: 502px;
+			background-color: #ffffff;
+			border-radius: 25px;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 3fr;
+			border: transparent;
+			filter: drop-shadow(0px 37.8392px 100.905px rgba(0, 0, 0, 0.06));
+			grid-column: 1/ span 6;
+			
+			justify-self: end;
+			grid-row: 3/ span 1;
+			margin-right: 5%;
+			text-align: start;
+			
+			box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.05);
+			transition: box-shadow 300ms ease-in;
+			margin-left:10%;
+		}
 
 .card-1:hover{
 	box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.15);
@@ -184,7 +206,7 @@ color: #CA574B;
 .text-header{
 	grid-row: 1/ span 1;
 	font-family:'SF Pro Display';
-    
+    grid-column: 1/ span 8;
     font-weight:700;
 	
 }
@@ -305,7 +327,7 @@ color: #CA574B;
 
 
 @media(max-width: 767px){
-    .cards, .card-1, .card-2{
+    .cards, .card-1, .card-2, .card-3{
       display:none;
     }
 	.notice{
@@ -345,9 +367,12 @@ color: #CA574B;
 		.summary-text{
 			grid-column: 1/ span 8;
 		}
+		.front{
+			margin-top: 60px;
+		}
 		.footer{
 			grid-column: 6/ span 2;
-			grid-row: 3/ span 1;
+			grid-row: 4/ span 1;
 		}
 	  }
   
@@ -360,7 +385,7 @@ color: #CA574B;
 			row-gap:  150px;
 			max-width: 1500px;
 			background: #FDFCFC;
-			grid-template-rows: 55px 1fr 50px;
+			grid-template-rows: 55px 1fr 1fr 30px;
 			color: #0F0F0F;
 		}
 		
@@ -405,7 +430,7 @@ color: #CA574B;
 		.footer{
 			/* grid-area: footer; */
 			/* margin-top: auto; */
-			grid-row: 3/ span 1; 
+			grid-row: 4/ span 1; 
 		grid-column: 10/ span 2;	
 			color: #0F0F0F;
 			
@@ -474,6 +499,27 @@ color: #CA574B;
 				transition: box-shadow 300ms ease-in;
 				margin-right:10%;
 			}
+			.card-3{
+				/*	height: 630px;*/
+					width: 502px;
+					background-color: #ffffff;
+					border-radius: 25px;
+					display: grid;
+					grid-template-columns: 1fr;
+					grid-template-rows: 1fr 3fr;
+					border: transparent;
+					filter: drop-shadow(0px 37.8392px 100.905px rgba(0, 0, 0, 0.06));
+					grid-column: 1/ span 6;
+					
+					justify-self: end;
+					grid-row: 3/ span 1;
+					margin-right: 5%;
+					text-align: start;
+					
+					box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.05);
+					transition: box-shadow 300ms ease-in;
+					margin-left:10%;
+				}
 		
 		.card-1:hover{
 			box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.15);
@@ -481,12 +527,10 @@ color: #CA574B;
 		.card-2:hover{
 			box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.15);
 		}
-		.card{
-			text-decoration: none;
-			color:#0F0F0F;
-			border:none;
-			display: block;
+		.card-3:hover{
+			box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.15);
 		}
+		
 		/* .card-image{
 			grid-row: 1/ span 1;
 			height: 265px;
@@ -509,7 +553,7 @@ color: #CA574B;
 		.text-header{
 			grid-row: 1/ span 1;
 			font-family:'SF Pro Display';
-			
+			grid-column: 1/ span 8;
 			font-weight:700;
 			
 		}
@@ -528,9 +572,12 @@ color: #CA574B;
 		.timeline-role{
 			grid-row: 3/ span 1;
 			display: grid;
-			grid-row: 1fr 1fr;
+			
 			font-family:'SF Pro Display';
 			font-weight: 300;
+		}
+		.front{
+			margin-top: 60px;
 		}
 		
 		.role{
